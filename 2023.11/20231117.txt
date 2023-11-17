@@ -1,0 +1,15 @@
+# request 객체의 메소드
+- 컨트롤러에서 호출 URI를 참고할 일이 있어 request.getRequestURI()를 사용하였다.
+  그래서 이외에 다른 메소드는 뭐가 있을까 찾아보다가 아래에 정리하였다.
+
+// request 객체 메소드
+1) getParameter("test"): HTML form 중 name="test"인 값을 가지고 있는 form의 매개변수 값을 가져옴
+2) getMethod(): 현재 요청이 GET인지 POST인지를 알려줌 (전송방식을 알려줌)
+3) getParameterNames(): HTTP 요청 헤더에 포함된 모든 헤더 이름을 객체로 변환
+4) getRemoteAddr(): 클라이언트의 IP 주소를 알려줌
+5) getQueryString(): 쿼리스트링을 반환함
+6) getServerPort(): 서버의 포트번호를 반환함
+7) getServerName(): 서버의 이름을 반환함
+8) getProtocol(): HTTP 프로토콜을 반환함
+9) getRequestURL(): 호스트를 포함한 전체주소 반환 ex) http://test.com/a/b/c
+10) getRequestURI(): 호스트를 제외한 전체주소 반환 ex) /a/b/c
