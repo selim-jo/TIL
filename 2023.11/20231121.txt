@@ -1,0 +1,13 @@
+# 자바 웹 기술 7장 7-1, 7-2 정리 및 실습
+- 서블릿의 비즈니스 로직 처리 방법과 데이터베이스 연동하는 방법에 대해 정리하며 실습하였다. 자세한 내용은 노션에 정리하였다.
+
+// 서블릿의 비즈니스 로직 처리 방법
+1) 클라이언트의 요청을 받음
+2) 데이터베이스 연동과 같은 비즈니스 로직을 처리함
+3) 처리 결과를 클라이언트에게 돌려줌
+
+# encodeURIComponent / encodeURI
+- URI를 인코딩할 때 보내는 함수로 URI 전체를 인코딩할 때는 encodeURI()를 사용하고 URI 파라미터를 인코딩할 때는 encodeURIComponent()를 사용하면 됨
+
+ex) const name = "co&ding";
+    const uri = "http://test.com?name=" + encodeURIComponent(name);
