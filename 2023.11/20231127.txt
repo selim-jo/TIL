@@ -1,0 +1,15 @@
+# 자바 웹 기술 14장 14-1~14-6 정리 및 실습
+- JSP에서 사용하는 표현 언어와 JSTL에 대해 학습하였다. 자세한 내용은 노션에 정리하였다.
+
+- 대표적인 Core 태그 라이브러리 기능
+1) <c:set>: JSP 페이지에서 변수를 지정함
+2) <c:remove>: 지정된 변수를 제거함
+3) <c:if>: 조건문을 사용함
+4) <c:choose>: switch문을 사용함, <c:when>과 <c:otherwise> 서브 태그를 가짐
+5) <c:forEach>: 반복문을 사용함
+6) <c:forTokens>: 구분자로 분리된 각각의 토큰을 처리할 때 사용함
+7) <c:import>: URL을 이용해 다른 자원을 JSP 페이지에 추가함
+8) <c:redirect>: response.sendRedirect() 기능을 수행함
+9) <c:url>: 요청 매개변수로부터 URL을 생성함
+10) <c:catch>: 예외 처리에 사용함
+11) <c:out>: JspWriter에 내용을 처리한 후 출력함
