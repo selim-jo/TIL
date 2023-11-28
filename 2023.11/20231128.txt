@@ -1,0 +1,23 @@
+# 자바스크립트 children, childNodes
+- 거의 제이쿼리만 사용하다가 순수 자바스크립트를 사용하다 보니 확실히 복잡한 것 같다. 
+  그래서 오늘도 오류를 해결해내는데 시간이 걸렸다.
+  다음에 시간되면 날잡고 순수 자바스크립트에 대해 공부해야겠다.
+  아래에는 children, childNodes에 대해 정리하였다.
+
+- childNodes란?
+: childeNodes 속성은 자바스크립트 노드의 속성 중 하나이며 호출된 노드의 자식 노드의 컬렉션을 반환함
+: 이 컬렉션을 객체로 index 넘버를 사용하여 접근 가능함
+: 첫 번째 자식 노드의 인덱스는 0부터 시작함
+: 문법 -> element.childNodes
+: 사용예시 -> test.childNodes[0];
+
+-children란?
+: children은 HTML 요소의 속성 중 하나이며 자식 요소들의 컬렉션을 객체로 반환함
+: 문법 -> element.children
+: 사용예씨 -> test.children[0];
+
+- childNodes와 childeren의 차이
+: children은 요소를 반환하며 childNodessms text, 주석과 같은 모든 노드를 반환한다는 점
+
+# 자바 웹 기술 14장 14-7~14-12 정리 및 실습
+- Core/다국어/포매팅 태그 라이브러리 등에 대해 학습하였다. 자세한 내용은 노션에 정리하였다.
