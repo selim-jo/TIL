@@ -1,0 +1,33 @@
+# 자바 웹 기술 19장 19-2~19-3 정리 및 실습
+-의존성 주입(DI)을 주입하는 방법에 대해 학습하였다. 자세한 내용은 노션에 정리하였다.
+
+- 의존성 주입(DI) 방법 (스프링에서 DI 설정은 XML 파일에서 함)
+1) setter를 이용한 DI 기능
+```
+<beans>
+	// bean 태그를 이용해 PersonServiceImpl 객체(빈)를 생성한 후 빈 id를 personService를 지정함
+	<bean id="personService" class="com.spring.ex01.PersonServiceImpl">
+		// PersonServiceImpl 객체의 속성 name 값을 <value> 태그를 이용해 '홍길동'으로 초기화함
+		<property name="name">
+			<value>홍길동</value>
+		</property>
+	</bean>
+</beans>
+```
+2) 생성자를 이용한 DI 기능
+```
+<beans>
+	// 인자가 한 개인 생성자로 id가 personService1인 빈을 생성함
+	// 생성자로 value인 이순신을 전달하여 속성 name을 초기화함
+	<bean id="personService1" class="com.spring.ex02.PersonServiceImpl">
+		<constructor-arg value="이순신" />
+	</bean>
+	
+	// 인자가 두 개인 생성자로 id가 personService2인 빈을 생성함
+	// 생성자로 두 개의 값을 전달하여 name과 age를 초기화함
+	<bean id="personService2" class="com.spring.ex02.PersonServiceImpl">
+		<constructor-arg value="손흥민" />
+		<constructor-arg value="23" />
+	</bean>
+</beans>
+```
