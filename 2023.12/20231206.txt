@@ -1,0 +1,18 @@
+# 자바 웹 기술 21장 정리 및 실습
+-프로젝트에서 사용하고 있는 MVC에 대한 기능에 대해 학습하였다. 자세한 내용은 노션에 정리하였다.
+
+- 스프링에서 지원하는 MVC 기능의 특징
+1) 모델2 아키텍처를 지원함
+2) 스프링과 다른 모듈과의 연계가 쉬움
+3) 타일즈(tiles)나 사이트메시(sitemesh) 같은 View 기술과의 연계가 쉬움
+4) 태그 라이브러리를 통해 message 출력, theme 적용 그리고 입력 폼을 보다 쉽게 구현할 수 있음
+
+- 스프링 프레임워크 MVC 기능 수행 과정
+1) 브라우저가 DispatcherServlet에 URL로 접근하여 해당 정보를 요청함
+2) 핸들러 매핑에서 해당 요청에 대해 매핑된 컨트롤러가 있는지 요청함
+3) 매핑된 컨트롤러에 대해 처리를 요청함
+4) 컨트롤러가 클라이언트의 요청을 처리한 결과와 View 이름을 ModelAndView에 저장해서 DispatcherServlet으로 반환함
+5) DispatcherServlet에서는 컨트롤러에서 보내온 View 이름을 ViewResolver로 보내 해당 View를 요청함
+6) ViewResolver는 요청한 View를 보냄
+7) View의 처리 결과를 DispatcherServlet으로 보냄
+8) DispatcherServlet은 최종 결과를 브라우저로 전송함
