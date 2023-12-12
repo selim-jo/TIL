@@ -1,0 +1,14 @@
+# 리눅스 톰캣 서버에서 실시간 로그 보는 법
+1) putty로 WAS Server 접속
+2) catalina.out 파일의 위치를 찾음
+-> catalina.out: 서버상에서 발생한 모든 내용(서버의 기동, 정지, 개시 등)을 기록한 파일임
+-> catalina.out 파일은 톰캣 폴더/logs 폴더 아래에 위치함
+-> find / -name catalina* 명령어로 catalina.out 파일이 어디에 위치해 있는지 확인함
+-> 혹은 filezila로 폴더구조를 파악한 후 catalina.out 파일을 찾음
+3) 해당 logs 디렉터리까지 이동함
+-> 명령어: cd 폴더명
+4) 실시간 기록되는 log 확인
+-> 명령어: tail -f catalina.out
+5) 이전 로그를 확인하고 싶다면 logs 디렉터리 아래에 있는 파일들을 확인하면 됨
+-> 보통 날짜가 뒤에 적혀있음
+-> ex) catalina.out-20231210
