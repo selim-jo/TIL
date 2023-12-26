@@ -1,0 +1,16 @@
+# 창 제어
+- window.open 메소드는 새 창을 생성함
+- 현대의 브라우저는 대부분 탭을 지원하기 때문에 window.open은 새 창을 만듦
+- 메소드 사용법
+: 생활코딩 창제어 관련 강의 보고 정리
+
+# Jackson 라이브러리
+
+# @Pathvariable vs @RequestParam
+- spring 강의자료 참고하여 정리
+
+# Http 데이터를 객체로 처리하는 방법
+
+# Spring의 3 Layer Architecture
+
+# 조인 쿼리 prac

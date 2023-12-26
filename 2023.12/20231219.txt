@@ -1,0 +1,9 @@
+# CSRF(Cross Site Request Forgery)
+- 개념 정리
+
+# VO 값 설정할 때 알아야할 부분
+- private String no = ""; -> 빈값으로 뜸
+- private String no; -> null값으로 뜸
+
+# "".equals vs "=="으로 Null값 체크하는 방식 차이
+- 찾아서 정리
