@@ -40,3 +40,4 @@
 - 2023.12.19. - CSRF, VO 값 설정할 때 알아야할 부분, "".equals vs "=="으로 Null값 체크하는 방식 차이
 - 2023.12.21. - 창 제어, Jackson 라이브러리, @Pathvariable vs @RequestParam 등
 - 2023.12.26. - objectMapper.convertValue, Arrays.sort, Comparator 정렬 관해 정리
+- 2023.12.27. - 오라클 문자열 합치는 방법(||, CONCAT)

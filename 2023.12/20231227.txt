@@ -1,0 +1,18 @@
+# 오라클 문자열 합치는 방법 (||, CONCAT)
+- 오라클에서 문자열을 합칠 때, || 또는 CONCAT 사용
+- 실무에서는 || 많이 사용하는 편임
+- CONCAT 함수 사용하는 방법
+ex) SELECT ENAME
+           , JOB
+           , CONCAT(ENAME, JOB)
+           , CONCAT(CONCAT(ENAME, ' / '), JOB)
+      FROM EMP
+     WHERE EMPNO IN (1, 1000);
+
+- || 사용하는 방법
+ex) SELECT ENAME
+           , JOB
+           , ENAME || JOB
+           , ENAME || ' / ' || JOB
+      FROM EMP
+     WHERE EMPNO IN (1, 1000);
