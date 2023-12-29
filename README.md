@@ -42,3 +42,4 @@
 - 2023.12.26. - objectMapper.convertValue, Arrays.sort, Comparator 정렬 관해 정리
 - 2023.12.27. - 오라클 문자열 합치는 방법(||, CONCAT)
 - 2023.12.28. - SQL 쿼리문 작성시 팁
+- 2023.12.29. - 프로젝트 oracle DB 연결 및 아이디/닉네임 중복체크 기능 구현

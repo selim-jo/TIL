@@ -1,0 +1,16 @@
+# 프로젝트 oracle DB 연결
+1) pom.xml DB 연결 관련 설정
+- <repositories>
+  ... (Oracle JDBC 드라이버는 메이븐 센트럴 레포지토리에 없음. 그래서 설정해주는 부분)
+  </repositories>
+  <dependency>
+  ... (mybatis, ojdbc 설정)
+  </dependency>
+
+2) root-context.xml DB 연결 관련 설정
+- DB 정보를 가지는 datasource 객체 생성
+- sqlSessionFactory, sqlSessionTemplate 객체 생성
+
+3) 해당 경로에 ojdbc 라이브러리 추가
+
+# 아이디/닉네임 중복체크 기능 구현
