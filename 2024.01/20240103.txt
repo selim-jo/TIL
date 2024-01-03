@@ -1,0 +1,27 @@
+# <input type="submit" /> vs  <button></button>
+- 폼 전송을 할 때 두 가지를 번갈아가며 사용하였다.
+  그렇게 사용하다가 이 두 개의 차이에 대해 궁금해져 찾아보며 정리하였다.
+- 이 두 가지는 기능적으로 동일하며 <button></button> 같은 경우
+  type 속성을 명시하지 않으면 submit 기능을 수행한다.
+
+cf) button 속성값
+- type="submit" : 폼의 전송 기능 담당
+- type="reset" : 폼 작성 내용을 초기화하는데 사용함
+- type="button" : 자바스크립트를 이용한 기능 구현에 많이 사용함
+
+# 스프링 인터셉터 설정
+- servlet-context.xml에서 인터셉터 설정을 해줌
+cf) spring 3.2 버전부터는 exclude-mapping을 이용해 해당 인터셉터로부터 제외시키는 기능을 제공해줌
+
+// servlet-context.xml 예시
+
+<bean:bean id="TestInterceptor" class="com.**.interceptor.TestInterceptor"></bean:bean>
+
+<interceptors>
+    <interceptor>
+        <!-- mapping 같은 경우 interceptor가 컨트롤러를 제어할 수 있게 해줌 -->
+        <!-- 컨트롤러 단위별로 하나씩 해도 되며, bean으로 선언된 interceptor에 해당하는 기능을 통해 제어하고 싶은 컨트롤러를 지정해주면 됨 -->
+        <mapping path="/test/*.do"/>
+        <bean:ref bean="TestInterceptor"/>
+    </interceptor>
+</interceptors>
