@@ -1,0 +1,9 @@
+# 로그인 인터셉터 처리
+- LoginInterceptor.java
+- servlet-context.xml
+위 파일에 인터셉터 관련 처리
+
+# 비밀번호 DB저장 암호화
+- spring security를 pom.xml에 적용
+- spring-security.xml (bcryptPasswordEncoder)
+- web.xml
