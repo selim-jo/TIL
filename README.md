@@ -48,3 +48,4 @@
 - 2024.01.02. - 회원가입 처리 기능 오류 해결, list 초기화시 null vs  new 사용 차이
 - 2024.01.03. - <input type="submit" /> vs  <button></button>, 스프링 인터셉터 설정
 - 2024.01.04. - 로그인 인터셉터 처리, 비밀번호 DB 저장 암호화
+- 2024.01.05. - # BCryptPasswordEncoder 개념 및 사용방법
