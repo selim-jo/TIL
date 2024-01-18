@@ -1,0 +1,17 @@
+# mapperLocations 설정
+- 이전에 간단한 프로젝트를 할 때는 하나의 mapper 파일을 사용하다 보니 mapperLocations를 한 경로만 설정했으면 됐는데 
+  프로젝트의 기능이 확장되면서 여러개의 폴더에 mapper 파일이 있다보니 경로 설정을 변경해줬어야 했다.
+- 아래에 오류가 안나게 경로 설정하는 법을 정리해놓았다.
+
+1) list 형태로 설정
+<property name="mapperLocations">
+    <list>
+        <value>classpath*:com/lec/user/member/mapper/*.xml</value>
+        <value>classpath*:com/lec/admin/course/mapper/*.xml</value>
+    </list>
+</property>
+
+2) 1번의 단점은 프로젝트 규모가 커지면 리스트에 담긴 값이 너무 많아짐. so, 아래와 같이 변경
+<property name="mapperLocations>
+    <value>classpath*:com/lec/**/mapper/*.xml</value>
+</property>
