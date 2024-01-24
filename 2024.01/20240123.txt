@@ -1,0 +1,16 @@
+# 예외처리(Exception)
+1) 예외는 언제 발생하는가?
+- ex) 존재하지 않는 파일을 읽으려고 할 때 -> FileNotFoundException 예외 발생
+      0으로 다른 숫자를 나눌 때 -> ArithmeticException 예외 발생
+      배열에서 아무것도 없는 곳을 가리킬 때 -> ArrayIndexOutOfBoundsException 예외 발생
+
+2) 예외 처리하기
+- try {
+    <수행할 문장>;    
+  } catch(예외1) {
+    <수행할 문장>;
+  } catch(예외2) {
+    <수행할 문장>;
+  }
+cf) 어떤 예외가 발생할지 구체적으로 명시해주는게 좋음
+      
