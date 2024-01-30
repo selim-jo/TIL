@@ -1,0 +1,34 @@
+# Hikari DataSource
+- Hikari는 Connection Pooling을 제공하는 JDBC DataSource의 구현체임
+
+# 제어의 역전(IoC)/의존성 주입(DI)
+- 이 용어에 대해 많이는 들어보고 대충 무슨 뜻인지는 알고 있지만, 정확히 설명하라고 하면 설명하지 못해 다시 정리가 필요하다.
+- 제어의 역전(IoC): 설계원칙
+- 의존성 주입(DI): 디자인 패턴
+- DI 패턴을 사용하여 IoC 설계 원칙 구현
+
+# 오라클 쿼리 문법(인덱스 힌트, count, decode)
+- 인덱스 힌트
+: 인덱스 힌트 같은 경우는 이번에 처음 알았다.
+: 특징
+-> 적절한 인덱스를 사용하면 쿼리의 수행 속도를 향상 시킴
+-> ORDER BY를 사용하지 않아도 인덱스의 컬럼 순서로 정렬되어 조회됨
+: 사용방법
+ex) SELECT /*+ INDEX(a EMP_IDX) */
+           a.empno
+         , a.ename
+         , a.hiredate
+      FROM emp a
+
+- count(*) vs count(컬럼)
+: 헷갈릴 수 있는 부분
+: count(*) -> null값에 상관없이 모든 행 카운트
+: count(컬럼) -> null값이 들어간 행은 카운트x
+
+- DECODE
+: 오라클 쿼리에서 가장 많이 사용하는 함수 중 하나로, if else와 비슷한 기능 수행함
+: 사용방법
+ex) DECODE(DRINK, 'C', '콜라', 'W', '물', '기타')
+-> if(DRINK == 'C') return '콜라'
+   else if(DRINK == 'W') return '물'
+   else return '기타'
