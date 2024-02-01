@@ -66,3 +66,6 @@
 - 2024.01.29. - Hikari DataSource, 제어의 역전/의존성 주입, 오라클 쿼리 문법(인덱스 힌트, count, DECODE)
 - 2024.01.30. - ObjectMapper, 오라클 계층형 쿼리
 - 2024.01.31. - IntelliJ에서 이클립스 프로젝트 import하는 방법
+
+## 2024.02
+- 2024.02.01. - Redis 서버
