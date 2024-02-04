@@ -1,0 +1,8 @@
+# addAttribute vs addFlashAttribute 차이
+- 미니 프로젝트를 만들다가 RedirectAttribute를 사용할 일이 있었다.
+  redirectAttributes.addAttribute("넘길 키", "넘길 값"); 이렇게 사용해 redirect할 때 값을 함께 넘겨줬다.
+  localhost:8080/요청url?redirect키=redirect값 이런식으로...
+  redirect는 기본적으로 PRG방식이기 때문에 GET방식으로 데이터가 넘어간다. 그렇기 때문에 값이 다 노출된다.
+  그런데 POST방식으로 데이터를 넘기는 방법이 있었다... 바로 addFlashAttribute
+- 정리하자면, addAttribute는 GET방식이며 페이지를 새로고침해도 값이 유지된다.
+  그에 반에 addFlashAttribute는 POST방식이며 일회성 데이터라 새로고침하면 값이 사라진다.

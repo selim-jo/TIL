@@ -69,3 +69,4 @@
 
 ## 2024.02
 - 2024.02.01. - Redis 서버
+- 2024.02.02. - addAttribute vs addFlashAttribute 차이
