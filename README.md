@@ -71,3 +71,4 @@
 - 2024.02.01. - Redis 서버
 - 2024.02.02. - addAttribute vs addFlashAttribute 차이
 - 2024.02.03. - MSA 서비스간 통신 RestTemplate ve FeignClient
+- 2024.02.04. - 클론 prj 세팅 및 기본 페이지, 기능 구현
