@@ -70,3 +70,4 @@
 ## 2024.02
 - 2024.02.01. - Redis 서버
 - 2024.02.02. - addAttribute vs addFlashAttribute 차이
+- 2024.02.03. - MSA 서비스간 통신 RestTemplate ve FeignClient

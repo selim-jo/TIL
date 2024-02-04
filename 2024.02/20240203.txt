@@ -1,0 +1,20 @@
+# MSA 서비스간 통신 RestTemplate ve FeignClient
+1. 마이크로서비스간 통신 종류
+- 동기: HTTP Request/Response 방식 (RestTemplate, FeignClient)
+- 비동기: Subscribe 방식 (AMQP, Kafka)
+
+2. RestTemplate
+- HTTP 프로토콜을 통해 다른 API를 연결하는 방식
+- 예제
+: 클라이언트 요청 -> localhost:8080/userservice/users -> rest template -> orderservice로 연결
+  (userservice - orderservice 간의 연결)
+
+3. FeignClient
+- Rest call을 추상화한 Spring cloud netflix의 라이브러리
+- 사용방법 및 특징
+: 호출하려는 HTTP Endpoint에 대한 인터페이스 생성
+: @FeignClient 선언 (RestTemplate보다 간단함)
+- 로드밸런스도 지원함
+- 분리된 마이크로서비스지만 하나의 서비스에 있는 메서드처럼 사용할 수 있어 직관적이고 간편함
+- 예제
+: userservice에서 orderservice를 호출하는 상황 -> userservice에 Feign 인터페이스를 구현하면 됨
