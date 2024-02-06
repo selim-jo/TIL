@@ -73,3 +73,4 @@
 - 2024.02.03. - MSA 서비스간 통신 RestTemplate ve FeignClient
 - 2024.02.04. - 클론 prj 세팅 및 기본 페이지, 기능 구현
 - 2024.02.05. - 클론 prj 이어서
+- 2024.02.06. - proxy/reverse proxy, @Resource/@Autowired, 클론 prj 이어서
