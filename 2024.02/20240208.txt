@@ -1,0 +1,5 @@
+# 클론 prj 이어서
+- 진행하면서 만난 오류
+: Uncaught TypeError: Cannot read properties of undefined (reading 'length')
+- 위 오류는 length를 측정하고자 하는 변수의 값이 없거나 잘못되서 발생하는 오류로, ajax로 결과값을 받을 때 변수명을 잘못 명시해 발생한 것이다.
+  어디서 잘못됐는지 디버깅하면서 발견하였다... 간단한 문제였는데 변수명 잘못된 걸 찾느라 시간이 좀 걸렸다...
