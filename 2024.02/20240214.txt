@@ -1,0 +1,11 @@
+# @JsonProperty 어노테이션
+- spring 프로젝트를 진행하다가 @JsonProperty 어노테이션을 사용하는 부분을 발견하였다.
+  이 어노테이션 같은 경우 이름만 봤을 때 Json 같은 어노테이션으로 보인다.
+  역시나 겍체를 JSON 형식으로 변환할 때 Key의 이름을 설정할 수 있는 어노테이션을 뜻한다.
+- 사용예시
+public class TestDto {
+    @JsonProperty("test_id")
+    private Long testId;
+            :
+            :
+}
