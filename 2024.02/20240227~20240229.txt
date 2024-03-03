@@ -1,0 +1,2 @@
+# 클론 prj intellij로 migrate
+- 클론 prj eclipse -> intellij로 migrate 하기
