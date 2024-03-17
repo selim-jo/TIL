@@ -1,0 +1,35 @@
+# 오라클 인덱스
+- 개념
+: 데이터베이스에서 검색 속도를 향상시키는 데 사용데는 중요한 기능임
+: 데이터베이스 인덱스는 검색 조건을 빠르게 만족시키기 위해 데이터의 위치를 가리킴
+: 자주 사용되는 검색 조건에 대해 인덱스를 생성하는 것이 좋음
+- 인덱스 생성 방법
+1) CREATE INDEX문
+CREATE INDEX index_name
+ON table_name (column1, column2, ...);
+2) UNIQUE 옵션 (중복된 값이 없도록 할 때 사용)
+CREATE UNIQUE INDEX index_name
+ON table_name (column1, column2, ...);
+3) DESC 옵션 (내림차순 정렬)
+CREATE INDEX index_name
+ON table_name (column1 DESC);
+
+cf) 그외 생성방법에 대해서는 더 찾아보고 정리하기
+
+# 자바 예외사항
+1) 대표적인 실행 예외
+- ArithmeticException: 0으로 나누기와 같은 부적절한 산술연산을 수행할 때 발생함
+- IllegalArgumentException: 메서드에 부적절한 매개변수를 전달할 때 발생함
+- IndexOutOfBoundException: 배열, 벡터 등에서 범위를 벗어난 인덱스를 벗어날 때 사용함
+- NoSuchElementException: 요구한 원소가 없을 때 발생함
+- NullPointerException: null값을 가진 참조변수에 접근할 때 발생함 (가장 많이 발생함)
+- NumberFormatException: 숫자로 바꿀 수 없는 문자열을 숫자로 변환하려 할 때 발생함
+2) 대표적인 일반 예외
+- ClassNotFoundException: 존재하지 않는 클래스를 사용하려 할 때 발생함
+- NoSuchFieldException: 클래스가 명시한 필드를 포함하지 않을 때 발생함
+- NoSuchMethodException: 크랠스가 명시한 메서드를 포함하지 않을 때 발생함
+- IOException: 데이터 읽기 쓰기 같은 입출력 문제가 있을 때 발생함
+
+# 미니 프로젝트 기획 및 와이어프레임
+- 미니 프로젝트 기획 및 와이어프레임 관리자 페이지 추가 작업
+- 세부 일정 계획 세우기
